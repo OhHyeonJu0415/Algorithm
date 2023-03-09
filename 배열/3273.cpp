@@ -19,11 +19,22 @@ int main() {
 	cin >> x;
 
 	sort(arr, arr + n);
+	
+	int i = 0, j = n - 1;
 
-	for (int i = 0; i < n; i++) {
-		for (int j = i + 1; j < n; j++) {
-			if (arr[i] + arr[j] == x) result += 1;
-			else if (arr[i] + arr[j] > x) break;
+	while (true) {
+		if (i > j || i==j) break;
+		int temp = arr[i] + arr[j];
+		if (temp < x) {
+			i++;
+		}
+		else if (temp == x) {
+			result++;
+			i++;
+			j--;
+		}
+		else {
+			j--;
 		}
 	}
 

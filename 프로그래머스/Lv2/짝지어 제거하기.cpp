@@ -16,6 +16,6 @@ int solution(string s)
         else S.push(s[i]);
     }
     if(!S.empty()) answer=false;
-
+ 
     return answer;
 }

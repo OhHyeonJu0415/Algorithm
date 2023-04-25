@@ -13,7 +13,7 @@ vector<int> solution(int brown, int yellow) {
                 answer.push_back(j);
                 check=true;
                 break;
-            }
+            } 
         }
         if(check) break;
     }

@@ -34,7 +34,6 @@ vector<int> solution(vector<int> progresses, vector<int> speeds) {
         for(int i=q.front();i<progresses.size();i++){
             progresses[i]+=speeds[i];
         }
-        
     }
     
     return answer;

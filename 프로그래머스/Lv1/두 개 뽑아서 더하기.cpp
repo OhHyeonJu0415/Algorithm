@@ -13,7 +13,8 @@ vector<int> solution(vector<int> numbers) {
             s.insert(numbers[i]+numbers[j]);
         }
     }
-    
+
+    //assign 함수 활용하기
     answer.assign(s.begin(),s.end());
     
     return answer;
